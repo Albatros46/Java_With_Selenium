@@ -43,6 +43,10 @@ public class Sel_030_WindowHandling2 {
 		driver.switchTo().window(linkedinPage);
 		driver.switchTo().window(twitterPage);
 		driver.switchTo().window(instagram);
+		driver.switchTo().defaultContent();
+		
+		System.out.println(driver.getCurrentUrl());
+		
 		
 		Thread.sleep(4000);
 		driver.quit();
